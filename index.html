@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parqueadero</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="fondo">
+
+
+        <div class="encabezado">
+            <h1 class="titulo">Parking</h1>
+            <button class=" btnTotal">Dinero recaudado</button>
+        </div>
+
+        <div class="contenedor contenido">
+            <div class="contenedor-info">
+                <h2 class="center">Seleccione Vehiculo </h2>
+                <div class="iconos">
+                    <img src="imgs/carro1.png" alt="" id="carro">
+                    <img src="imgs/moto1.png" alt="" id="moto">
+                </div>
+                <div>
+                    <h2 class="no-margin">Placa</h2>
+                    <div class="placa-form">
+                        <input type="text" id="placa" >
+                    </div>
+                </div>
+
+                <div class="btns">
+                    <button class="btn-ingresa btn">
+                        Ingresa
+                    </button>
+                    <button class="btn-sale btn">
+                        Sale
+                    </button>
+                </div>
+
+                <div class="horario">
+                    <div>
+                        <i class="fa-solid fa-calendar"></i>
+                    </div>
+                    <div>
+                        <h2 class="no-margin">Hora</h2>
+                        <p class="hora">6:30</p>
+                    </div>
+                    <div>
+                        <h2 class="no-margin">Fecha</h2>
+                        <p class="fecha"></p>
+                    </div>
+                </div>
+                <h2 class="mo-margin">Tarifas por minuto</h2>
+                <div class="tarifas">
+                    <h2 class="mo-margin"> Carro: <span class="precios">$86</span></h2>
+                    <h2 class="mo-margin"> Moto: <span class="precios">$97</span></h2>
+                </div>
+                <h3>Precio a pagar : <span class="precios" id="precio"></span></h3>
+                
+            </div>
+
+
+            <div class="contenedor-listado">
+                <div class="vehiculos">
+                    <h2 class="titulo-lista">Vehiculo</h2>
+                    <div class="lista vehiculo-lista"></div>
+                    <div></div>
+                </div>
+                <div class="motos">
+                    <h2 class="titulo-lista">Moto</h2>
+                    <div class="lista moto-lista"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
