@@ -300,7 +300,7 @@ function validarPlacaCarro(txt) {
 
 };
 function validarPlacaMoto(txt) {
-    const patron1 = /^[A-Z]{3}[0-9]{2}[A-Z]{1}/;
+    const patron1 = /^[[a-zA-Z]{3}[0-9]{2}[a-zA-Z]{1}$/;
     console.log(txt);
     if (!patron1.test(txt)) {
         swal('', 'Placa invalida, digite nuevamente', "warning");
